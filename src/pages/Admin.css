@@ -1,0 +1,251 @@
+.admin-page {
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+.admin-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e293b;
+  font-size: 32px;
+}
+
+
+/* Search Box */
+
+.search-box {
+
+  width: 350px;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  font-size: 16px;
+
+}
+
+
+
+/* Table */
+
+table {
+
+ width:100%;
+ border-collapse: collapse;
+ background:white;
+
+ border-radius:15px;
+ overflow:hidden;
+
+ box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+}
+
+
+th {
+
+ background:#0f172a;
+ color:white;
+
+ padding:15px;
+ text-align:left;
+
+}
+
+
+td {
+
+ padding:14px;
+ border-bottom:1px solid #eee;
+
+ color:#334155;
+
+}
+
+
+tr:hover {
+
+ background:#f8fafc;
+
+}
+
+
+
+/* Status */
+
+select {
+
+ padding:8px;
+
+ border-radius:8px;
+
+ border:1px solid #ddd;
+
+ cursor:pointer;
+
+}
+
+
+
+/* Delete Button */
+
+button {
+
+ background:#ef4444;
+
+ color:white;
+
+ border:none;
+
+ padding:8px 15px;
+
+ border-radius:8px;
+
+ cursor:pointer;
+
+ font-weight:bold;
+
+}
+
+
+button:hover {
+
+ background:#dc2626;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+table{
+
+font-size:13px;
+
+}
+
+
+.search-box{
+
+width:100%;
+
+}
+
+}
+.dashboard-cards {
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+margin-bottom:30px;
+
+}
+
+
+
+.card {
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+.card h3 {
+
+color:#475569;
+
+font-size:18px;
+
+}
+
+
+
+.card p {
+
+font-size:35px;
+
+font-weight:bold;
+
+color:#0f172a;
+
+}
+
+
+
+@media(max-width:900px){
+
+.dashboard-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:500px){
+
+.dashboard-cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
+.whatsapp-btn {
+
+display:inline-block;
+
+background:#22c55e;
+
+color:white;
+
+padding:8px 15px;
+
+margin-left:8px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+.whatsapp-btn:hover {
+
+background:#16a34a;
+
+}
+.chart-container {
+  background: #fff;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  max-width: 700px;
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
