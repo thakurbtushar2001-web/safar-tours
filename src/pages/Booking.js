@@ -28,7 +28,7 @@ function Booking() {
 const handlePayment = async () => {
   try {
     const { data } = await axios.post(
-      "http://localhost:5000/create-order",
+     "https://safar-tours-1lwllt4aq-safar-tours.vercel.app/create-order",
       {
         amount: 10000, // ₹100
       }
