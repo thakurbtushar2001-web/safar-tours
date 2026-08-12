@@ -59,10 +59,10 @@ const handlePayment = async () => {
     const razorpay = new window.Razorpay(options);
     razorpay.open();
 
-  } catch (error) {
-    console.error(error);
-    alert("Payment Failed");
-  }
+ } catch (error) {
+  console.error("RAZORPAY ERROR:", error);
+  alert("Payment Failed: " + error.message);
+}
 };
 
   const handleSubmit = async (e) => {
