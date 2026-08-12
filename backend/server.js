@@ -41,29 +41,13 @@ app.post("/create-order", async (req, res) => {
 
     const order = await razorpay.orders.create(options);
 
-    res.status(200).json({
-      success: true,
-      id: order.id,
-      amount: order.amount,
-      currency: order.currency,
-    });
-  } catch (error) {
-    console.error("RAZORPAY ORDER ERROR:", error);
-
-    res.status(500).json({
-      success: false,
-      message: "Unable to create Razorpay order",
-      error: error.message,
-    });
-  }
-});
-
-const PORT = process.env.PORT || 5000;
-
-if (process.env.NODE_ENV !== "production") {
-  app.listen(PORT, () => {
-    console.log(`Backend server running on port ${PORT}`);
+     res.status(500).json({
+    success: false,
+    message: "Unable to create Razorpay order",
+    error: error.message,
   });
 }
+
+});
 
 module.exports = app;
